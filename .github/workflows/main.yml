@@ -31,6 +31,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        context: build/docker/services
+          #        context: build/docker/services
         file: Dockerfile
         tags: ghoyosr/deepnewt:release-${{ steps.mkdatetag.outputs.dtag }}
