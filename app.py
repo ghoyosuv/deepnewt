@@ -2203,8 +2203,11 @@ def recombination(original_pop, P_c, P_a, P_b):
 
 """# **Reading and preparing data**"""
 
+print('Hello, DeepNEWT')
 sents = pd.read_csv("https://raw.githubusercontent.com/Cletsxd/tweets_exp_966/master/tweets/sents.csv")
 tweets = pd.read_csv("https://raw.githubusercontent.com/Cletsxd/tweets_exp_966/master/tweets/tweets.csv")
+
+print('Files read.')
 
 sents_n = np.ndarray.flatten(sents["sent"].values)
 tweets_n = np.ndarray.flatten(tweets["tweet"].values)
