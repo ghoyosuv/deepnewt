@@ -2,7 +2,7 @@ name: Build and Push Docker image
 
 on:
   push:
-    branches: [ main ]
+    branches: [ dev ]
   repository_dispatch:
     types:
       - dispatch-build
@@ -33,4 +33,4 @@ jobs:
         push: true
           #        context: build/docker/services
         file: Dockerfile
-        tags: ghoyosr/deepnewt:release-${{ steps.mkdatetag.outputs.dtag }}
+        tags: ghoyosr/deepnewt:dev-${{ steps.mkdatetag.outputs.dtag }}
